@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+
+  background-color: rgb(211, 240, 192);
+}
+
+/* wrap */
+
+.wrapper {
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+/* header */
+
+.header__h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 1.0;
+  text-align: center;
+}
+
+.header__p {
+  text-align: center;
+}
+
+
+/* main */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.date-picker__content,
+.calc__content {
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button:hover,
+label:hover {
+  cursor: pointer;
+}
+

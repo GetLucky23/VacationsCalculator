@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Test</title>
+      <style></style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Калькулятор відпусток</h1>
+      <p class="header__p">(незамінна річ для кадровиків, які не вміють рахувати або їм влом)</p>
+    </header>
+
+    <main class="main">
+
+      <section class="date-picker">
+        <div class="wrapper">
+          <section class="date-picker__content">
+            <p class="time-start">Початок періоду: 
+              <span></span> <br>
+              <input type="date" class="time-start-datepicker" value="" id="sdatep">
+              <button class="time-start-button">обрати</button>
+            </p>
+
+            <p class="time-end">Кінець періоду: 
+              <span></span> <br>
+              <input type="date" class="time-end-datepicker" value="" id="edatep">
+              <button class="time-end-button">обрати</button>
+            </p>
+
+            <p class="used-days">Використано відпустки:
+              <span></span> <br>
+              <input type="number" class="used-input">
+              <button class="used-input-button">обрати</button>
+            </p>
+
+            <input type="checkbox" class="checkbox" id="checkbox"> 
+            <label for="checkbox">Включити відпустку за шкідливі умови</label> 
+            <br><br>
+
+            <button class="calculate-button" id="calculate-button">Підрахуй ;)</button>
+
+          </section>
+        </div>
+      </section>
+
+      <div class="section-wrapper">
+        <section class="calc calc-top">
+          <div class="wrapper">
+            <section class="calc__content">
+              <p class="calc__p calc__p-every-year">
+                Щорічна відпустка: <span></span>
+              </p>
+
+              <p class="calc__p calc__p-add-bad-cond">
+                Відпустка за шкідливі умови праці: <span></span>
+              </p>
+
+              <p class="calc__p calc__p-add-time">
+                Відпустка за вислугу років: <span></span>
+              </p>
+
+              <br>
+
+              <p class="calc__p calc__p-total-vacation">
+                ВСЬОГО ВІДПУСТКИ: <span></span>
+              </p>
+            </section>
+          </div>
+        </section>
+
+        <section class="calc calc-bottom">
+          <div class="wrapper">
+            <section class="calc__content">
+              <p class="calc__p calc__p-days-in-period">
+                Кількість днів в періоді: <span></span>
+              </p>
+
+              <p class="calc__p calc__p-years-in-period">
+                Кількість повних років: <span></span>
+              </p>
+
+              <p class="calc__p calc__p-halfs-in-period">
+                Кількість півріч: <span></span>
+              </p>
+            </section>
+          </div>
+        </section>
+      </div>
+      
+
+    </main>
+  </body>
+  <script src="./main.js" defer></script>
+  <!-- <link rel="stylesheet" type="text/css" href="/jquery.datetimepicker.css"/ >
+  <script src="/jquery.js"></script>
+  <script src="/build/jquery.datetimepicker.full.min.js"></script> -->
+
+</html>
